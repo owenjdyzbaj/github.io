@@ -1,35 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
     <style>
+        /* General Reset and Styling */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
-            margin-top: 50px;
+            line-height: 1.6;
         }
-        h1 {
-            color: #2c3e50;
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        /* Main Content Container */
         .container {
-            border: 1px solid #ddd;
-            display: inline-block;
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures image doesn't stretch */
+            border: 5px solid #2c3e50;
+            margin-top: -90px; /* Pulls image up into the header slightly */
+            background-color: white;
+        }
+
+        /* Social Links / Contact */
+        .links a {
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .links a:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+    <header>
+        <h1>Owen McGuire</h1>
+        <p>Digital Problem Solver • People Manager • Bow-Tie Wearer</p> </header>
+
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is my first website hosted on GitHub.</p>
-        <p>It's alive! 🚀</p>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+        
+        <h2>About Me</h2>
+        <p>
+            I love web content, user experience, and coffee. 
+            This is an experience in vibe coding.
+        </p>
+
+        <br>
+
+        <div class="links">
+            <a href="mailto:owen.mcguire+site@gmail.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/owenmcguire/">LinkedIn</a>
+        </div>
     </div>
+
+    <footer>
+        &copy; 2026 Owen McGuire. Built with Gemini (HTML & CSS) and GitHub (hosting).
+    </footer>
 
 </body>
 </html>
